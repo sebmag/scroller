@@ -11,3 +11,10 @@ Le premier paramètre (#origin) correspond au nom d'un ID, d'une classe ou d'une
 Le second paramètre (#cible) correspond à la cible vers laquelle le défilement de la page aura lieu. Si aucun paramètre n'est spécifié, l'élément *body* est désigné par défaut.
 
 Le dernier paramètre (2000) correspond à la durée de l'animation en millisecondes. Si ce paramètre n'est pas spécifié, la valeur de la durée de l'animation est égale à 1000 par défaut.
+
+### Exemples
+
+    scroller('#origin'); // Fait défiler jusqu'à l'élément body pendant 1 seconde.
+    scroller('#origin', '', 1200); // Fait défiler jusqu'à l'élément body pendant 1,2 seconde.
+
+Attention à ne pas mettre d'espace entre les guillemets si vous spécifiez une durée et laissez le second paramètre vide !
