@@ -4,10 +4,11 @@
 
 function scroller(origine, cible, duree){
     
-    if(duree === 'undefined') {
+    if(undefined === duree) {
         duree = 1000;
     }
-    if((cible === 'undefined') || (cible === '')) {
+    
+    if((undefined === cible) || (cible === '')) {
         cible = 'body';
     }
     
